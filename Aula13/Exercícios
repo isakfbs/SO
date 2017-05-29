@@ -1,0 +1,22 @@
+
+Exercício
+Pesquise pelo menos mais 2 sistemas de arquivos que ainda estão em uso, e
+quais são as suas características (as mesmas informações apresentadas nas
+tabelas anteriores: tamanho de cluster, tamanho máximo da partição etc.).
+
+ReiserFS
+•	Cluster size 						      4k
+•	Maximum partition size 				16TB
+•	Maximum file size					    8TB
+•	Filenames						          Any byte except NUL and '/'.
+•	File permissions supported? 	Yes
+•	Transation log? 					    No 
+
+
+ext3
+•	Cluster size 						      4k
+•	Maximum partition size 				2TB to 32 TB
+•	Maximum file size					    16Gb to 2TB
+•	Filenames						          Any byte except NUL and  '/'.
+•	File permissions supported? 	Yes
+•	Transation log? 					    No 
