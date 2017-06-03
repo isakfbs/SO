@@ -1,0 +1,46 @@
+1) Quais são as 3 camadas de hierarquia de memória?
+
+ -Inboard Memory (Registradores,Cache,Memoria principal)
+ -OutBoard Memory (HDS,CD-ROM,DVD-RW,etc)
+ -Offline-Storage (MO, WORM)
+
+2) Como é feita a aplicação do princípio da localidade em uma memória
+organizada de forma hierárquica?
+
+ * Nos registradores temos os dados utilizados diretamente pela UCP.
+  
+ * Utilizamos uma pequena e rápida memória cache, que armazena blocos
+  de dados frequentemente acessados (ou com alta probabilidade de acesso) da memória principal.
+
+ *A própria memória principal pode ter uma área reservada para utilização
+  como cache de disco, pois o princípio da localidade também se aplica à
+  memória externa.
+  
+3) No que consiste a memória virtual?
+  *É uma forma de estender a quantidade de memória para os dados temporários utilizados pelos aplicativos, quando a memoria RAM está cheia
+
+4) Qual é a função do registrador de base no gerenciamento de memória?
+  *armazenar o endereço do inicio do programa na memoria fisica.
+  
+5) No que consiste a segmentação da memória?
+  *
+
+6) Qual é o papel dos device drivers?
+
+7) O que é o descritor de um arquivo?
+
+8) Qual é a solução adotada pela técnica de buf ering?
+
+9) O que é gravado no bloco de boot de um disco?
+
+10) Qual é a dificuldade que pode ser encontrada na alocação contígua de um
+disco?
+
+11) Como é feita a organização de um disco através de blocos ligados?
+
+12) Cite 3 exemplos de sistemas de arquivos.
+
+13) Quais são as 3 categorias de softwares de virtualização?
+
+14) Quais são os 2 tipos de hypervisors e quais são as características de cada
+tipo?
