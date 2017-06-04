@@ -23,11 +23,15 @@ organizada de forma hierárquica?
   *armazenar o endereço do inicio do programa na memoria fisica.
   
 5) No que consiste a segmentação da memória?
-  *
+  *Um programa é dividido em varios segmentos, cada segmento é alocado na memoria física e recebe registradoes de base e tamanho.
 
 6) Qual é o papel dos device drivers?
-
+ *São estruturas de dados e procedimentos, e conhecem os detalhes de hardware de um dispositivo, 
+  interagem diretamente com os dispositivos. 
+  
 7) O que é o descritor de um arquivo?
+ *Cada processo possui uma tabela que registra as streams abertas, o descritor é um índice desta tabela,
+  utilizado plea aplicação para identificar a stream ao realizar uma operação.
 
 8) Qual é a solução adotada pela técnica de buf ering?
 
