@@ -34,16 +34,25 @@ organizada de forma hierárquica?
   utilizado plea aplicação para identificar a stream ao realizar uma operação.
 
 8) Qual é a solução adotada pela técnica de buf ering?
+ *Agrupar as operações de E/S em um lote e realizar a transferencia fisica em uma só vez.
 
 9) O que é gravado no bloco de boot de um disco?
+ *Contem o programa de bootsrap, é responsavel por carregar em memoria e executar o sistema operacional; no bloco de boot 
+  há informação de cada partição (inicio,fim e tipo de sistema de arquivo).
 
 10) Qual é a dificuldade que pode ser encontrada na alocação contígua de um
 disco?
+ *Dificuldade em encontrar um espaço grande o suficiente para acomodar um novo arquivo.
 
 11) Como é feita a organização de um disco através de blocos ligados?
+ *Cada arquivo ocupa blocos que não precisam ser contíguos, a entrade do arquivo no diretório de arquivos tem o endereço do 
+ primeiro bloco do arquivo, cada bloco tem um ponteiro para o proximo bloco.
 
 12) Cite 3 exemplos de sistemas de arquivos.
-
+  *-Fat32
+   -NTFS 
+   -eXT3
+   
 13) Quais são as 3 categorias de softwares de virtualização?
 
 14) Quais são os 2 tipos de hypervisors e quais são as características de cada
