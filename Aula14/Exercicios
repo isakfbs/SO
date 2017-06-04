@@ -54,6 +54,13 @@ disco?
    -eXT3
    
 13) Quais são as 3 categorias de softwares de virtualização?
+ * -Hypervisor
+   -Contâiner 
+   -Plataforma virtual para aplicações
 
 14) Quais são os 2 tipos de hypervisors e quais são as características de cada
 tipo?
+ * - Tipo1(Nativo) : executa diretamente no hardware do servidor, compartilha recursos de hardware entre máquinas virtuais
+     de forma que cada uma delas imagine ter os recursos exclusivos para si.
+    -Tipo2(hosted) : é executado sobre o sistema operacional como se fosse um processo. A camada de virtualização é composta
+     por um hardware virtual e um sistema operacional hóspede. 
