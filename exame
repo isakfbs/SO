@@ -1,0 +1,105 @@
+1)	Quais são as diferenças essenciais entre um aplicativo comum (por exemplo, o Microsoft Word) e um sistema operacional?
+R: O sistema operacional controla e coordena o uso do hardware, os aplicativos utilizam os recursos computacionais para resolver problemas dos usuários.
+
+2)	Por que um sistema operacional é necessário?
+Para permitir o compartilhamento dos recursos de hardware por diversas aplicações.
+
+3) Que nome é dado às chamadas realizadas pelas aplicações aos serviços disponibilizados pelo sistema operacional? Mencione como exemplo duas destas chamadas.
+R:System Calls, Exemplos close(); connect();
+
+4) O que é um processo?
+R: é uma programa em execução que utiliza recursos para realizar suas tarefas.
+
+5) Um processador com um único núcleo executa vários processos simultaneamente? Explique sua resposta.
+R:Não, os processos são executados de forma alternada.
+
+6) O que ocorre quando o sistema operacional faz o chaveamento entre
+processos?
+ R: o sistema salva todo o estado do processo que está em execução e carrega o estado do processo que entrará em execução.
+
+7). Qual é a diferença entre thread e processo?
+Um processo é um trabalho em execução, um thread é a execução de uma linha de instruções, um processo pode possuir múltiplas threads.
+
+8) Qual é a diferença entre escalonamento preemptivo e não-preemptivo.
+No escalonamento não-preemptivo, quando um processo está em execução nenhum evento externo pode ocasionar a perda do uso do processador. No preemptivo o sistema operacional pode “tomar” o processador mesmo que o processo ainda tenha instruções a executar.
+
+
+
+9) Cite 2 algoritmos de escalonamento de processos e explique o
+funcionamento de cada um.
+Escalonamento first-come, first-served, neste algoritmo os processos são executados na ordem em que chegam ao escalonador.
+Escalonamento com prioridade, o processador é alocado ao processo com maior prioridade.
+
+10) Cite 2 recursos disponibilizados pelo sistema operacional para ajudar o
+programador a implementar programas concorrentes sem interferência entre
+threads, e diga em qual situação é mais conveniente utilizar cada recurso.
+Semaforo, passagem de mensagem
+
+//prova 2
+
+1) Quais são as 3 camadas de hierarquia de memória?
+
+ -Inboard Memory (Registradores,Cache,Memoria principal)
+ -OutBoard Memory (HDS,CD-ROM,DVD-RW,etc)
+ -Offline-Storage (MO, WORM)
+
+2) Como é feita a aplicação do princípio da localidade em uma memória
+organizada de forma hierárquica?
+
+ * Nos registradores temos os dados utilizados diretamente pela UCP.
+  
+ * Utilizamos uma pequena e rápida memória cache, que armazena blocos
+  de dados frequentemente acessados (ou com alta probabilidade de acesso) da memória principal.
+
+ *A própria memória principal pode ter uma área reservada para utilização
+  como cache de disco, pois o princípio da localidade também se aplica à
+  memória externa.
+  
+3) No que consiste a memória virtual?
+  *É uma forma de estender a quantidade de memória para os dados temporários utilizados pelos aplicativos, quando a memoria RAM está cheia
+
+4) Qual é a função do registrador de base no gerenciamento de memória?
+  *armazenar o endereço do inicio do programa na memoria fisica.
+  
+5) No que consiste a segmentação da memória?
+  *Um programa é dividido em varios segmentos, cada segmento é alocado na memoria física e recebe registradoes de base e tamanho.
+
+6) Qual é o papel dos device drivers?
+ *São estruturas de dados e procedimentos, e conhecem os detalhes de hardware de um dispositivo, 
+  interagem diretamente com os dispositivos. 
+  
+7) O que é o descritor de um arquivo?
+ *Cada processo possui uma tabela que registra as streams abertas, o descritor é um índice desta tabela,
+  utilizado plea aplicação para identificar a stream ao realizar uma operação.
+
+8) Qual é a solução adotada pela técnica de buf ering?
+ *Agrupar as operações de E/S em um lote e realizar a transferencia fisica em uma só vez.
+
+9) O que é gravado no bloco de boot de um disco?
+ *Contem o programa de bootsrap, é responsavel por carregar em memoria e executar o sistema operacional; no bloco de boot 
+  há informação de cada partição (inicio,fim e tipo de sistema de arquivo).
+
+10) Qual é a dificuldade que pode ser encontrada na alocação contígua de um
+disco?
+ *Dificuldade em encontrar um espaço grande o suficiente para acomodar um novo arquivo.
+
+11) Como é feita a organização de um disco através de blocos ligados?
+ *Cada arquivo ocupa blocos que não precisam ser contíguos, a entrade do arquivo no diretório de arquivos tem o endereço do 
+ primeiro bloco do arquivo, cada bloco tem um ponteiro para o proximo bloco.
+
+12) Cite 3 exemplos de sistemas de arquivos.
+  *-Fat32
+   -NTFS 
+   -eXT3
+   
+13) Quais são as 3 categorias de softwares de virtualização?
+ * -Hypervisor
+   -Contâiner 
+   -Plataforma virtual para aplicações
+
+14) Quais são os 2 tipos de hypervisors e quais são as características de cada
+tipo?
+ * - Tipo1(Nativo) : executa diretamente no hardware do servidor, compartilha recursos de hardware entre máquinas virtuais
+     de forma que cada uma delas imagine ter os recursos exclusivos para si.
+    -Tipo2(hosted) : é executado sobre o sistema operacional como se fosse um processo. A camada de virtualização é composta
+     por um hardware virtual e um sistema operacional hóspede. 
